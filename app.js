@@ -8,7 +8,7 @@ const overlayButton = document.querySelector('.close');
 function generateHTML([h, v]) {
     return `
         <div class="item h${h} v${v}">
-            <img src="img/${randomNumber(102)}.jpg" />
+            <img src="img/${randomNumber(50)}.jpg" />
             <div class="item__overlay">
                 <button>View →</button>
             </div>
@@ -31,7 +31,7 @@ function close () {
 }
 
 // function to generate random spanning values
-const spanValues = Array.from({ length: 100}, () => [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]);
+const spanValues = Array.from({ length: 50}, () => [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]);
 
 const html = spanValues.map(generateHTML).join('');
 
